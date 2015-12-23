@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [testList]" parallel="tests">
+  <test name="myTest(failed)" parallel="tests">
+    <classes>
+      <class name="test.java.NativeExe">
+        <methods>
+          <include name="testDevices" invocation-numbers="10 3 0 6 14 11 19"/>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuite"/>
+        </methods>
+      </class> <!-- test.java.NativeExe -->
+    </classes>
+  </test> <!-- myTest(failed) -->
+</suite> <!-- Failed suite [testList] -->

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-testList">
+              <span class="suite-name border-failed">testList</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-testList">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-testList">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-testList">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-testList">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-testList">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-testList">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-testList">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods, 7 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testList" class="hide-methods failed suite-testList"> (hide)</a> <!-- hide-methods failed suite-testList -->
+                      <a href="#" panel-name="suite-testList" class="show-methods failed suite-testList"> (show)</a> <!-- show-methods failed suite-testList -->
+                    </span>
+                    <div class="method-list-content failed suite-testList">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-testList -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-testList" class="hide-methods passed suite-testList"> (hide)</a> <!-- hide-methods passed suite-testList -->
+                      <a href="#" panel-name="suite-testList" class="show-methods passed suite-testList"> (show)</a> <!-- show-methods passed suite-testList -->
+                    </span>
+                    <div class="method-list-content passed suite-testList">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfec...)">testDevices(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcom...)">testDevices(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcom...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfec...)">testDevices(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testList" title="test.java.NativeExe" hash-for-method="testDevices(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">testDevices(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-testList -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-testList" class="panel testList">
+          <div class="suite-testList-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.NativeExe</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test Ended with error
+	at test.java.NativeExe.testDevices(NativeExe.java:134)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testList-class-failed -->
+          <div class="suite-testList-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.NativeExe</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfec...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfec...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcom...)">
+                  </a> <!-- testDevices(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcom...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcommunity\perfecto-enterprise-2.11(20151117.1).ipa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfec...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfec...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDevices(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)">
+                  </a> <!-- testDevices(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...) -->
+                  <span class="method-name">testDevices</span>
+                  <span class="parameters">(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-release.apk)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testList-class-passed -->
+        </div> <!-- panel testList -->
+        <div panel-name="test-xml-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/uzie/Documents/dev/workspace/Community/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; name=&quot;testList&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;myTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.NativeExe&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- myTest --&gt;
+&lt;/suite&gt; &lt;!-- testList --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for testList</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">myTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for testList</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for testList</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_testList');
+function tableData_testList() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDevices')
+data.setCell(0, 2, 'test.java.NativeExe')
+data.setCell(0, 3, 198055);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDevices')
+data.setCell(1, 2, 'test.java.NativeExe')
+data.setCell(1, 3, 163921);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDevices')
+data.setCell(2, 2, 'test.java.NativeExe')
+data.setCell(2, 3, 138955);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDevices')
+data.setCell(3, 2, 'test.java.NativeExe')
+data.setCell(3, 3, 130833);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDevices')
+data.setCell(4, 2, 'test.java.NativeExe')
+data.setCell(4, 3, 130794);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDevices')
+data.setCell(5, 2, 'test.java.NativeExe')
+data.setCell(5, 3, 130197);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDevices')
+data.setCell(6, 2, 'test.java.NativeExe')
+data.setCell(6, 3, 129057);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDevices')
+data.setCell(7, 2, 'test.java.NativeExe')
+data.setCell(7, 3, 123555);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testDevices')
+data.setCell(8, 2, 'test.java.NativeExe')
+data.setCell(8, 3, 116390);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDevices')
+data.setCell(9, 2, 'test.java.NativeExe')
+data.setCell(9, 3, 95616);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDevices')
+data.setCell(10, 2, 'test.java.NativeExe')
+data.setCell(10, 3, 79221);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testDevices')
+data.setCell(11, 2, 'test.java.NativeExe')
+data.setCell(11, 3, 74579);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDevices')
+data.setCell(12, 2, 'test.java.NativeExe')
+data.setCell(12, 3, 70005);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testDevices')
+data.setCell(13, 2, 'test.java.NativeExe')
+data.setCell(13, 3, 68137);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDevices')
+data.setCell(14, 2, 'test.java.NativeExe')
+data.setCell(14, 3, 64322);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testDevices')
+data.setCell(15, 2, 'test.java.NativeExe')
+data.setCell(15, 3, 63273);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testDevices')
+data.setCell(16, 2, 'test.java.NativeExe')
+data.setCell(16, 3, 62694);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDevices')
+data.setCell(17, 2, 'test.java.NativeExe')
+data.setCell(17, 3, 62614);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDevices')
+data.setCell(18, 2, 'test.java.NativeExe')
+data.setCell(18, 3, 58826);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testDevices')
+data.setCell(19, 2, 'test.java.NativeExe')
+data.setCell(19, 3, 58544);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testDevices')
+data.setCell(20, 2, 'test.java.NativeExe')
+data.setCell(20, 3, 57654);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testDevices')
+data.setCell(21, 2, 'test.java.NativeExe')
+data.setCell(21, 3, 569);
+window.suiteTableData['testList']= { tableData: data, tableDiv: 'times-div-testList'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 minutes</span>
+              <div id="times-div-testList">
+              </div> <!-- times-div-testList -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for testList</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-testList" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.NativeExe</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">BeforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, B187DA890752D02463279FCA08C63390A76B33DA, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 2FC00D086052C606D2D57EA757B7450A216D3832, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 61F28E0775D8B0B57388E72D176AFE91A6248B39, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 897864D5, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 1ACB3A0F, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 02157DF2AC2D7520, null, PUBLIC:PMcommunity\Bloomfire-perfec...)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 769BCE321F14DCF504614AB737BEE6F865E15AA4, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, DD992AFA0B69A5E2C2006A7A657690476B0086FE, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 3050BE36, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, B5DED881, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, CB1BF44CFEB5C6E1DC52FBC21973B76517820ED3, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">57686 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 6C8E27EB5B619CC743ADE9578163063A54642DB7, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">58256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">58575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 30E9D3E3, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">58857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 1E674EB8, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">62644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 95E0EEA907ECC690914C7ABE68786B3EDE4343DF, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">63305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, C37BAE1934AE7DD0AE3355F77146C7A65579CAA3, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">64353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, 21FA87D12F5451B436E9918C6FA1800918696394, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">68168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 03157DF35175BE01, null, PUBLIC:PMcommunity\Bloomfire-perfec...)</span>
+                <span class="method-start">79253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDevices(ios, com.bloomfire.enterprise.perfecto, A7493312BB4627B1F1D79F6426581A84AE273F9C, null, PUBLIC:PMcom...)</span>
+                <span class="method-start">128862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, 5CDCB21A, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">129088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDevices(Android, com.bloomfire.android.perfecto, DBBABA52, null, PUBLIC:PMcommunity\Bloomfire-perfecto-relea...)</span>
+                <span class="method-start">130863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">AfterSuite</span>
+                <span class="method-start">326938 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
