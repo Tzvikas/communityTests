@@ -25,6 +25,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class HTMLReporter   {
 
 	BufferedWriter _bw = null;
+	BufferedWriter _bwCSV = null;
+
 	public static String SCREENSHOTS_LIB = "/Users/uzie/Documents/PMRepos/reports/";
 
 
@@ -39,10 +41,14 @@ public class HTMLReporter   {
 	public void reportHeader (String ReportName,String ReportLocation,String title)
 	{
 		String repName  = ReportLocation+ ReportName;
+		String csvName  = ReportLocation+ ReportName+".csv";
 		File f = new File (repName) ;
+		File csv = new File (csvName) ;
 
 		try {
 			_bw = new BufferedWriter(new FileWriter(f));
+			_bwCSV = new BufferedWriter(new FileWriter(csv));
+
 			DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			Calendar cal = Calendar.getInstance();
 
@@ -91,6 +97,8 @@ public class HTMLReporter   {
 			_bw.write("</body></html>");
 
 			_bw.close();
+			_bwCSV.close();
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -125,6 +133,10 @@ public class HTMLReporter   {
 				_bw.write("<td> no report </td>");
 			}
 			_bw.write("</tr>");
+			
+			_bwCSV.write(device+","+status+","+rep);
+			_bwCSV.write(System.lineSeparator());
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

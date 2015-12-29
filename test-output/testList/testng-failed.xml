@@ -5,7 +5,7 @@
     <classes>
       <class name="test.java.NativeExe">
         <methods>
-          <include name="testDevices" invocation-numbers="10 3 0 6 14 11 19"/>
+          <include name="testDevices" invocation-numbers="7 6 5 11 14 8 12 10 20 3 16 24 18 23 17 19 21 9 25 32 35 27 30 38 22 26 28 34 31 37 29 33 40 49 53 43 45 57 48 41 50 56 47 52 58 63 62 66 76 69 54 72 81 70 60 75 85 74 87 78 80 73 77 79 98 88 90 99 97 96 106 114 109 102 121 115 111 108 116 123 113 122 120 126 125 127 134 129 132 133 135"/>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
         </methods>

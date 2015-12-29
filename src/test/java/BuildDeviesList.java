@@ -28,13 +28,13 @@ public class BuildDeviesList {
 		String iosApp = "com.bloomfire.enterprise.perfecto";
 		String AndroidApp = "com.bloomfire.android.perfecto";
 		
-		String apkLocation = "PUBLIC:PMcommunity\\\\Bloomfire-perfecto-release.apk";
-		String ipaLocation = "PUBLIC:PMcommunity\\\\perfecto-enterprise-2.11(20151117.1).ipa";
+		String apkLocation = "PRIVATE:PMcommunity\\\\Bloomfire-perfecto-release.apk";
+		String ipaLocation = "PRIVATE:PMcommunity\\\\perfecto-enterprise-2.11(20151117.1).ipa";
  		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder;
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(getFdata());
+			Document doc = dBuilder.parse(getData());
 
 			NodeList handsets = doc.getElementsByTagName("handset");
 
@@ -105,9 +105,10 @@ public class BuildDeviesList {
 
 	private static InputStream getData() {
 		try {
-			String URLDevices =  "https://demo.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
+			//String URLDevices =  "https://demo.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
+			String URLDevices =  "https://mobilecloud.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
 
-			URL obj = new URL(URLDevices);
+ 			URL obj = new URL(URLDevices);
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
 			// optional default is GET
