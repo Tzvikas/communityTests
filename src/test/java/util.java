@@ -87,6 +87,7 @@ public class util {
 
 	}
 
+	//public cloud
 	public static AppiumDriver getAppiumDriver(String deviceId,String app,String platform,String persona,String appLocation,HTMLReporter rep)   {
 		return getAppiumDriver(deviceId,app,platform,"https://mobilecloud.perfectomobile.com","uzie@perfectomobile.com","@Perfecto1",persona,appLocation,rep);
 	}

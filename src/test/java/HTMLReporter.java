@@ -13,7 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 /*
  *
- *  Class Name  : HTMLReporter
+ *  Class Name  : HTMLReporter ans CSV
  *	Author      : Uzi Eilon <uzie@perfectomobile.com>
  *	Date        : Dec 6th 2015  
  *	

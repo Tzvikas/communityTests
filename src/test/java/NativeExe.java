@@ -58,7 +58,7 @@ public class NativeExe {
 	@DataProvider(name = "Devices" , parallel = true)
 	public Object[][] testSumInput() {
 		return new Object[][] { 
-			 
+			 // public cloud devices
 				{"Android","com.bloomfire.android.perfecto","02157DF28335A818",null,"PRIVATE:PMcommunity\\Bloomfire-perfecto-release.apk"},
 				{"Android","com.bloomfire.android.perfecto","0FD429DE",null,"PRIVATE:PMcommunity\\Bloomfire-perfecto-release.apk"},
 				{"ios","com.bloomfire.enterprise.perfecto","032C5868AA6AE58656AFE39FC7A624904EE60F78",null,"PRIVATE:PMcommunity\\perfecto-enterprise-2.11(20151117.1).ipa"},
