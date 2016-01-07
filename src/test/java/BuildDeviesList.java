@@ -87,7 +87,7 @@ protected static String password = System.getProperty("np.pass", "Test_automatio
 			System.out.println("ccan parse XML ");
 			e.printStackTrace();
 		}
-
+	
 
 	}
 
