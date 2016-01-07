@@ -36,8 +36,9 @@ public class NativeExe {
 		 
 		String date = sdf.format(cal.getTime());
 		
-		_rep = new HTMLReporter("CommStats"+date+".html", "/Users/uzie/doc/PMRepos/commTests/", "Perfecto");
-
+	//	_rep = new HTMLReporter("CommStats"+date+".html", "/Users/uzie/doc/PMRepos/commTests/", "Perfecto");
+		String fileName = "CommStats_"+ today +".html";
+		_rep = new HTMLReporter(fileName, "/community/", "Perfecto");
 		// add one reporter in the before test will be used by all the tests
 
 	}
