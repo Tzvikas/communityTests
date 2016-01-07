@@ -19,7 +19,9 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 
 public class BuildDeviesList {
-
+protected static String host = System.getProperty("np.testHost", "branchtest.perfectomobile.com");
+protected static String user = System.getProperty("np.user", "test_automation@gmail.com");
+protected static String password = System.getProperty("np.pass", "Test_automation");
 
 	public static void main(String[] args) {
 
@@ -91,7 +93,8 @@ public class BuildDeviesList {
 
 	private static InputStream getFdata()
 	{
-		File initialFile = new File("/Users/uzie/Downloads/handsets.xml");
+	//	File initialFile = new File("/Users/uzie/Downloads/handsets.xml");
+		File initialFile = new File("/community/handsets.xml");
 		try {
 			InputStream targetStream = new FileInputStream(initialFile);
 			return targetStream;
@@ -106,8 +109,8 @@ public class BuildDeviesList {
 	private static InputStream getData() {
 		try {
 			//String URLDevices =  "https://demo.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
-			String URLDevices =  "https://mobilecloud.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
-
+		//	String URLDevices =  "https://mobilecloud.perfectomobile.com/services/handsets?operation=list&user=uzie@perfectomobile.com&password=@Perfecto1&status=connected";
+		String URLDevices =  "https://" + host + "/services/handsets?operation=list&user=" + user + "&password=" + password +"&status=connected";
  			URL obj = new URL(URLDevices);
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
