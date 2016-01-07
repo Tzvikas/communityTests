@@ -85,7 +85,15 @@ package test.java;
 			try {
 				driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 				driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			
+				try {
+					driver.findElement(By.xpath("//*[@resource-id='android:id/button1']")).click();
+					driver.getKeyboard().pressKey("HOME");
+					driver.launchApp();
+					
+				}
+				catch (Exception e) {
+				// TODO: handle exception
+				}
 				driver.findElement(By.xpath("//android.widget.EditText[1]")).sendKeys("uzie@perfectomobile.com");
 				driver.findElement(By.xpath("//android.widget.EditText[2]")).sendKeys("Perfecto1");
 				driver.findElement(By.xpath("//android.widget.Button[@text='Log In']")).click();
